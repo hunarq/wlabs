@@ -32,13 +32,13 @@ Ticket Service  provides the following functions:
  
  Build:
  ------------
- 
+``` 
  mvn clean install or mvn clean package
- 
+ ```
  
  Run:
  ------------
- 
+ ```
  jar -jar WalmartLabs-0.0.1-SNAPSHOT.jar
- 
+ ```
 
