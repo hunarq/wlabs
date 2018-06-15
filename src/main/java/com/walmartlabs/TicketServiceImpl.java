@@ -55,11 +55,13 @@ public class TicketServiceImpl implements TicketService {
 				if (c == numSeats) {
 					break;
 				}
+				
 			}
 		}
 
 		sh.setHoldTime(System.currentTimeMillis());
 		sh.setSeats(holds);
+		sh.setSeatsHeld(c);
 		sh.setId(bookingId++);
 		this.holds.put(sh.getId(), sh);
 		this.printStage();
@@ -83,7 +85,7 @@ public class TicketServiceImpl implements TicketService {
 			this.printStage();
 			return sh.getConfirmCode();
 		} else {
-			return "seat Hold Id not found";
+			return null;
 		}
 
 	}
