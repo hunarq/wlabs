@@ -27,20 +27,20 @@ public class TicketServiceTest {
 
 	@Test
 	public final void testNumSeatsAvailable() {
-		TicketService ts = TicketServiceImpl.getInstance();
+		TicketService ts = new TicketServiceImpl();
 		assertEquals(ts.numSeatsAvailable(), 20);
 	}
 
 	@Test
 	public final void testFindAndHoldSeats() {
-		TicketService ts = TicketServiceImpl.getInstance();
+		TicketService ts = new TicketServiceImpl();
 		SeatHold sh = ts.findAndHoldSeats(20, "test@test.com");
 		assertTrue(sh.getSeats().length == 20);
 	}
 
 	@Test
 	public final void testReserveSeats() {
-		TicketService ts = TicketServiceImpl.getInstance();
+		TicketService ts = new TicketServiceImpl();
 		SeatHold sh = ts.findAndHoldSeats(20, "test@test.com");
 		String confirmCode = ts.reserveSeats(sh.getId(), "test@test.com");
 		assertNotNull(confirmCode);

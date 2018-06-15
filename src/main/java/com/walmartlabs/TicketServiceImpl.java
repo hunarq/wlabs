@@ -15,14 +15,9 @@ public class TicketServiceImpl implements TicketService {
 	Map<Integer,SeatHold>  holds = new ConcurrentHashMap<Integer,SeatHold>();
 	Seat[] seats = new Seat[NO_OF_SEATS];
 
-     
-    
-    
-    private static TicketServiceImpl myObj;
-    /**
-     * Create private constructor
-     */
-    private TicketServiceImpl(){// create seats
+ 
+    public TicketServiceImpl(){
+    	// create seats
 		for(int i = 0; i < NO_OF_SEATS ; i++)
 		{
 		    seats[i] = new Seat( "" + (1+i));
@@ -30,17 +25,7 @@ public class TicketServiceImpl implements TicketService {
 		releaseTimer = new Timer();
 		releaseTimer.schedule(new HoldReleaser(this.holds, this.seats), 0, TIMER_INTERVAL_SECONDS * 1000);
 	}
-    /**
-     * Create a static method to get instance.
-     */
-    public static TicketServiceImpl getInstance(){
-        if(myObj == null){
-            myObj = new TicketServiceImpl();
-        }
-        return myObj;
-    }
-    	
-    	
+ 
 	@Override
 	public int numSeatsAvailable() {
 		int availableSeats = 0;

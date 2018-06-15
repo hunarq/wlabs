@@ -7,7 +7,7 @@ public class Reserve {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		TicketService ts = TicketServiceImpl.getInstance();
+		TicketService ts = new TicketServiceImpl();
 		String email = "test@example.com";
 		SeatHold sh;
 		String confirmCode= null;
