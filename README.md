@@ -8,9 +8,8 @@ Simple ticket service that facilitates the discovery, temporary hold, and final 
 venue.
 For example, see the seating arrangement below.
 
-"----------[[ STAGE ]]----------
----------------------------------"
-
+```----------[[ STAGE ]]----------
+---------------------------------
 sssssssssssssssssssssssssssssssss
 sssssssssssssssssssssssssssssssss
 sssssssssssssssssssssssssssssssss
@@ -20,7 +19,7 @@ sssssssssssssssssssssssssssssssss
 sssssssssssssssssssssssssssssssss
 sssssssssssssssssssssssssssssssss
 sssssssssssssssssssssssssssssssss
-
+```
 
 Ticket Service  provides the following functions:
 
