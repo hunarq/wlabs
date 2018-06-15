@@ -6,6 +6,7 @@ public class SeatHold {
 	private int[] seats = null;
 	private String confirmcode = null;
 	private long holdTime;
+	private int seatsHeld;
 	
 	public int getId() {
 		return id;
@@ -37,6 +38,13 @@ public class SeatHold {
 	}
 	public long getHoldTime() {
 		return this.holdTime;
+	}
+
+	public void setSeatsHeld(int c) {
+		this.seatsHeld = c;
+	}
+	public int getSeatsHeld() {
+		return this.seatsHeld;
 	}
 
 }
