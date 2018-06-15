@@ -17,7 +17,7 @@ class HoldReleaser extends TimerTask {
 	}
 
 	public void run() {
-		// We are checking for expired element from map every second
+		// We are checking for expired element
 		RelaseExpiredHolds();
 	}
 

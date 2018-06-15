@@ -8,7 +8,7 @@ public class Reserve {
 		// TODO Auto-generated method stub
 		
 		TicketService ts = new TicketServiceImpl();
-		String email = "hunarq@gmail.com";
+		String email = "test@example.com";
 		SeatHold sh;
 		String confirmCode= null;
 		int av=10;

@@ -10,15 +10,12 @@ public class TicketServiceImpl implements TicketService {
 	private static int SEATS_IN_ROW = 5;
 	private static int NO_OF_SEATS = NO_OF_ROWS * SEATS_IN_ROW;
 	private static int TIMER_INTERVAL_SECONDS = 1;
-	
 	int bookingId = 1;
 	Timer releaseTimer;
-
 	Map<Integer,SeatHold>  holds = new ConcurrentHashMap<Integer,SeatHold>();
-	
 	Seat[] seats = new Seat[NO_OF_SEATS];
-	
-	public TicketServiceImpl() {
+
+    public TicketServiceImpl() {
 		// create seats
 		for(int i = 0; i < NO_OF_SEATS ; i++)
 		{
