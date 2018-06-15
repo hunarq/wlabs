@@ -9,7 +9,8 @@ venue.
 For example, see the seating arrangement below.
 
 "----------[[ STAGE ]]----------
----------------------------------
+---------------------------------"
+
 sssssssssssssssssssssssssssssssss
 sssssssssssssssssssssssssssssssss
 sssssssssssssssssssssssssssssssss
@@ -18,17 +19,16 @@ sssssssssssssssssssssssssssssssss
 sssssssssssssssssssssssssssssssss
 sssssssssssssssssssssssssssssssss
 sssssssssssssssssssssssssssssssss
-sssssssssssssssssssssssssssssssss"
+sssssssssssssssssssssssssssssssss
 
 
+Ticket Service  provides the following functions:
 
-Ticket Service  provides thefollowing functions:
-
-Find the number of seats available within the venue
-Note: available seats are seats that are neither held nor reserved.
-Find and hold the best available seats on behalf of a customer
-Note: each ticket hold should expire within a set number of seconds.
-Reserve and commit a specific group of held seats for a customer
+-Find the number of seats available within the venue
+  Note: available seats are seats that are neither held nor reserved.
+-Find and hold the best available seats on behalf of a customer
+  Note: each ticket hold should expire within a set number of seconds.
+-Reserve and commit a specific group of held seats for a customer
 
  
  Build:
