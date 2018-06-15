@@ -75,8 +75,6 @@ public class TicketServiceImpl implements TicketService {
 
 		sh.setHoldTime(System.currentTimeMillis());
 		sh.setSeats(holds);
-		//set number of seats held based on availability
-		sh.setholdSeats(c);
 		sh.setId(bookingId++);
 		this.holds.put(sh.getId(), sh);
 		this.printStage();
